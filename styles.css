@@ -1,0 +1,398 @@
+/* ======================================================
+   GLOBAL CANVAS SYSTEM — DOODLE CHARMS (FINAL / LOCKED)
+   LSCP: BODY-ONLY CANVAS, NO SECTION BACKGROUNDS
+====================================================== */
+
+body {
+  margin: 0;
+  font-family: 'Poppins', system-ui, sans-serif;
+  color: #1F1F1F;
+
+  /* 🎨 DOODLE CANVAS — SINGLE CONTINUOUS SURFACE */
+  background: linear-gradient(
+    135deg,
+    #FFF1F0 0%,     /* soft blush entry */
+    #F3E1F1 30%,    /* lilac dominance */
+    #F8E6EC 55%,    /* pastel pink */
+    #F9ECE8 75%,    /* warm neutral */
+    #EEF3EC 100%    /* soft mint exit */
+  );
+}
+
+h1, h2 {
+  margin-bottom: 12px;
+}
+
+section {
+  padding: 80px 8%;
+  background: transparent; /* 🔒 enforced */
+}
+
+/* ======================================================
+   HEADER
+====================================================== */
+
+.site-header {
+  padding: 20px 8%;
+  background: transparent;
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  backdrop-filter: blur(3px);
+}
+
+.site-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* LOGO IMAGE sizing */
+.logo-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  display: block;
+}
+
+.logo-text {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* NAV RIGHT */
+.nav-right {}
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-btn {
+  background: transparent;
+  border: none;
+  font-size: 15px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 44px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  padding: 8px 12px;
+  min-width: 160px;
+  z-index: 50;
+}
+
+.dropdown li {
+  list-style: none;
+  padding: 8px 6px;
+}
+
+.dropdown li a {
+  text-decoration: none;
+  color: #1F1F1F;
+  font-size: 14px;
+}
+
+/* show dropdown on hover (desktop) */
+.nav-item.nav-dropdown:hover .dropdown {
+  display: block;
+}
+
+/* ADD TO CART button styling — matches screenshot (dark with medium shadow) */
+.cart-btn {
+  display: inline-block;
+  background: #1F1F1F;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 28px;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(31,31,31,0.12);
+  font-weight: 600;
+}
+
+/* ======================================================
+   HERO — TRANSPARENT (BODY CANVAS FLOWS THROUGH)
+====================================================== */
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 110px 8%;
+  background: transparent; /* 🔑 critical */
+}
+
+.hero-content {
+  max-width: 520px;
+}
+
+.hero-bento {
+  display: grid;
+  gap: 20px;
+}
+
+.bento {
+  border-radius: 24px;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+}
+
+.bento.large {
+  width: 260px;
+  height: 260px;
+}
+
+.bento.small {
+  width: 220px;
+  height: 160px;
+}
+
+/* ======================================================
+   WHY DOODLE CHARMS — TRANSPARENT
+====================================================== */
+
+.why {
+  text-align: center;
+  background: transparent;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.why-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #F3C1CC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  font-size: 20px;
+  box-shadow: 0 8px 20px rgba(243,193,204,0.45);
+}
+
+/* ======================================================
+   HANDCRAFTED COLLECTION — TRANSPARENT
+====================================================== */
+
+.collection {
+  background: transparent;
+}
+
+.filters button {
+  border: 1.5px solid #1F1F1F;
+  background: transparent;
+  border-radius: 20px;
+  padding: 8px 16px;
+  margin-right: 10px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.card {
+  border-radius: 24px;
+  padding: 20px;
+}
+
+.card-image {
+  height: 140px;
+  background: rgba(255,255,255,0.6);
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+
+.primary-btn {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 14px 28px;
+  background: #1F1F1F;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+/* CARD COLORS (UNCHANGED) */
+.mint { background: #DDEFE6; }
+.peach { background: #EED3B4; }
+.lavender { background: #D6D3E8; }
+.pink { background: #F3C1CC; }
+
+/* ======================================================
+   ABOUT — TRANSPARENT
+====================================================== */
+
+.about {
+  background: transparent;
+}
+
+/* ======================================================
+   FOUNDER — TRANSPARENT
+====================================================== */
+
+.founder {
+  background: transparent;
+}
+
+.signature {
+  margin-top: 32px;
+  font-style: italic;
+}
+
+/* ======================================================
+   STATS STRIP (DCV2)
+====================================================== */
+
+.stats-strip {
+  padding: 90px 8%;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  text-align: center;
+}
+
+.stat h3 {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+/* ======================================================
+   SPLIT FEATURE (DCV2 — MODIFIED UNDER LSCP)
+====================================================== */
+
+.split-feature {
+  padding: 110px 8%;
+}
+
+.split-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.split-image {
+  height: 420px;
+  border-radius: 32px;
+  background: rgba(255,255,255,0.55);
+}
+
+/* Secondary split — 25% smaller */
+
+.split-secondary {
+  margin-bottom: 0;
+}
+
+.split-secondary .split-image.small {
+  height: 320px;
+}
+
+.split-secondary .split-content {
+  max-width: 420px;
+}
+
+.split-secondary h3 {
+  margin-bottom: 12px;
+}
+
+/* ======================================================
+   FAQ
+====================================================== */
+
+.faq {
+  padding: 110px 8%;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px 80px;
+  margin-top: 60px;
+}
+
+.faq-grid h4 {
+  margin-bottom: 8px;
+}
+
+/* ======================================================
+   NEWSLETTER
+====================================================== */
+
+.newsletter {
+  text-align: center;
+  padding: 110px 8%;
+}
+
+.newsletter form {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.newsletter input {
+  padding: 14px 20px;
+  border-radius: 30px;
+  border: 1.5px solid #1F1F1F;
+  min-width: 260px;
+}
+
+.newsletter button {
+  padding: 14px 28px;
+  border-radius: 30px;
+  background: #1F1F1F;
+  color: white;
+  border: none;
+}
+
+/* ======================================================
+   FOOTER
+====================================================== */
+
+.site-footer {
+  padding: 100px 8% 40px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+}
