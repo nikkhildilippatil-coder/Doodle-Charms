@@ -8,15 +8,10 @@ body {
   font-family: 'Poppins', system-ui, sans-serif;
   color: #1F1F1F;
 
-  /* 🎨 DOODLE CANVAS — SINGLE CONTINUOUS SURFACE */
-  background: linear-gradient(
-    135deg,
-    #FFF1F0 0%,     /* soft blush entry */
-    #F3E1F1 30%,    /* lilac dominance */
-    #F8E6EC 55%,    /* pastel pink */
-    #F9ECE8 75%,    /* warm neutral */
-    #EEF3EC 100%    /* soft mint exit */
-  );
+  /* 🔒 APPROVED & LOCKED - DO NOT MODIFY WITHOUT APPROVAL 🔒 */
+  /* 🎨 FADE GRADIENT - PINK TO CYAN TOP TO BOTTOM */
+  background: linear-gradient(180deg, #F0D4E6 0%, #E8C5D9 25%, #E0D8E8 50%, #D8E5EF 75%, #D0E8F0 100%);
+  background-attachment: fixed;
 }
 
 h1, h2 {
@@ -25,7 +20,6 @@ h1, h2 {
 
 section {
   padding: 80px 8%;
-  background: transparent; /* 🔒 enforced */
 }
 
 /* ======================================================
@@ -139,7 +133,6 @@ section {
   justify-content: space-between;
   align-items: center;
   padding: 110px 8%;
-  background: transparent; /* 🔑 critical */
 }
 
 .hero-content {
@@ -264,11 +257,79 @@ section {
 
 .founder {
   background: transparent;
+  text-align: center;
+}
+
+.founder h2 {
+  font-size: 2rem;
+  margin-bottom: 48px;
+  color: #1F1F1F;
+  font-weight: 700;
+}
+
+.founder-greeting {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #1F1F1F;
+  margin: 0 0 20px 0;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+.founder-text-italic {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #666;
+  margin: 0 0 20px 0;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  font-style: italic;
+}
+
+.founder-thanks {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #666;
+  margin: 0 0 40px 0;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+
+.founder-name {
+  font-size: 1.6rem;
+  color: #1F1F1F;
+  margin: 0 0 16px 0;
+  font-weight: 700;
+}
+
+.founder-role-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 10px 22px;
+  border-radius: 25px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #FF6B9D;
+  letter-spacing: 0.5px;
+  margin-bottom: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .signature {
   margin-top: 32px;
   font-style: italic;
+  color: #999;
+  font-size: 0.95rem;
+  font-weight: 400;
 }
 
 /* ======================================================
@@ -277,18 +338,40 @@ section {
 
 .stats-strip {
   padding: 90px 8%;
+  background: transparent;
 }
 
 .stats-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
   text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.stat {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 28px 16px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 .stat h3 {
-  font-size: 36px;
-  margin-bottom: 8px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #1F1F1F;
+  margin: 0 0 12px 0;
+}
+
+.stat p {
+  font-size: 0.95rem;
+  color: #666;
+  margin: 0;
+  line-height: 1.6;
+  font-weight: 500;
 }
 
 /* ======================================================
@@ -297,6 +380,7 @@ section {
 
 .split-feature {
   padding: 110px 8%;
+  background: transparent;
 }
 
 .split-grid {
@@ -313,18 +397,18 @@ section {
   background: rgba(255,255,255,0.55);
 }
 
-/* Secondary split — 25% smaller */
+/* Secondary split — same size as first */
 
 .split-secondary {
   margin-bottom: 0;
 }
 
 .split-secondary .split-image.small {
-  height: 320px;
+  height: 420px;
 }
 
 .split-secondary .split-content {
-  max-width: 420px;
+  max-width: 520px;
 }
 
 .split-secondary h3 {
@@ -337,6 +421,7 @@ section {
 
 .faq {
   padding: 110px 8%;
+  background: transparent;
 }
 
 .faq-grid {
@@ -357,6 +442,7 @@ section {
 .newsletter {
   text-align: center;
   padding: 110px 8%;
+  background: transparent;
 }
 
 .newsletter form {
@@ -387,6 +473,8 @@ section {
 
 .site-footer {
   padding: 100px 8% 40px;
+  background: transparent;
+  color: white;
 }
 
 .footer-grid {
@@ -404,6 +492,7 @@ section {
 .testimonials {
   padding: 60px 20px;
   text-align: center;
+  background: transparent;
 }
 
 .testimonials h2 {
@@ -537,5 +626,169 @@ section {
   .testimonials-grid {
     grid-template-columns: 1fr;
     gap: 16px;
+  }
+}
+
+/* ======================================================
+   MEET THE FOUNDER SECTION
+====================================================== */
+
+.meet-founder {
+  text-align: center;
+  background: transparent;
+}
+
+.founder-label {
+  display: inline-block;
+  padding: 8px 20px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 25px;
+  color: #FF6B9D;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  letter-spacing: 0.5px;
+}
+
+.heart {
+  margin-right: 8px;
+}
+
+.meet-founder h2 {
+  font-size: 2.2rem;
+  margin-bottom: 16px;
+  color: #1F1F1F;
+  font-weight: 700;
+}
+
+.pink-text {
+  color: #FF6B9D;
+}
+
+.founder-subtitle {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 60px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8;
+}
+
+.founder-card {
+  position: relative;
+  max-width: 520px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 28px;
+  padding-bottom: 32px;
+  margin-bottom: 60px;
+}
+
+.founder-image {
+  width: 100%;
+  max-width: 520px;
+  height: 340px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 28px 28px 0 0;
+  margin-bottom: 0;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.founder-role {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 10px 22px;
+  border-radius: 25px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #FF6B9D;
+  letter-spacing: 0.5px;
+  margin-bottom: 32px;
+  margin-top: 0;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.founder-details {
+  text-align: center;
+  width: 100%;
+  padding: 0 28px;
+}
+
+.palette-emoji {
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.founder-details h3 {
+  font-size: 1.6rem;
+  color: #1F1F1F;
+  font-weight: 700;
+  margin: 0 0 16px 0;
+}
+
+.founder-bio {
+  font-size: 0.95rem;
+  color: #666;
+  margin: 0 0 14px 0;
+  line-height: 1.6;
+}
+
+.founder-passion {
+  font-size: 0.9rem;
+  color: #FF6B9D;
+  margin: 0;
+  font-weight: 500;
+}
+
+.founder-quote {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 48px 32px;
+  border-radius: 28px;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.founder-quote p {
+  font-size: 1.6rem;
+  color: #1F1F1F;
+  font-style: italic;
+  font-weight: 600;
+  margin: 0 0 24px 0;
+  line-height: 1.8;
+}
+
+.quote-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot.pink {
+  background: #FF6B9D;
+}
+
+.dot.cyan {
+  background: #ADD8E6;
+}
+
+@media (max-width: 640px) {
+  .meet-founder h2 {
+    font-size: 1.8rem;
+  }
+
+  .founder-image {
+    height: 300px;
   }
 }
