@@ -218,6 +218,7 @@ section {
 .card {
   border-radius: 24px;
   padding: 20px;
+  border: 1.2px solid rgba(0, 0, 0, 0.12);
 }
 
 .card-image {
@@ -364,6 +365,7 @@ section {
   font-weight: 700;
   color: #1F1F1F;
   margin: 0 0 12px 0;
+  opacity: 0;
 }
 
 .stat p {
@@ -372,6 +374,7 @@ section {
   margin: 0;
   line-height: 1.6;
   font-weight: 500;
+  opacity: 0;
 }
 
 /* ======================================================
@@ -566,15 +569,15 @@ section {
 
 /* Icon Box */
 .icon-box {
-    width: 6rem;
-    height: 6rem;
+    width: 4rem;
+    height: 4rem;
     margin: 0 auto 2rem;
     border-radius: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border: 1.5px solid rgba(255, 255, 255, 0.5);
     transition: all 0.3s ease;
     cursor: pointer;
 }
@@ -584,43 +587,47 @@ section {
 }
 
 .icon-box-pink {
-    background: linear-gradient(to bottom right, rgba(340, 100%, 92%, 0.2), rgba(340, 100%, 92%, 0.1));
+    background: linear-gradient(135deg, rgba(255, 176, 211, 0.35), rgba(255, 200, 221, 0.25));
 }
 
 .icon-box-pink .icon {
     color: var(--primary-color);
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
+    filter: drop-shadow(0 2px 4px rgba(255, 107, 157, 0.3));
 }
 
 .icon-box-purple {
-    background: linear-gradient(to bottom right, rgba(270, 60%, 60%, 0.2), rgba(270, 60%, 60%, 0.1));
+    background: linear-gradient(135deg, rgba(200, 180, 230, 0.35), rgba(216, 191, 216, 0.25));
 }
 
 .icon-box-purple .icon {
     color: var(--purple-500);
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
+    filter: drop-shadow(0 2px 4px rgba(180, 120, 200, 0.3));
 }
 
 .icon-box-blue {
-    background: linear-gradient(to bottom right, rgba(200, 90%, 60%, 0.2), rgba(200, 90%, 60%, 0.1));
+    background: linear-gradient(135deg, rgba(180, 220, 255, 0.35), rgba(200, 230, 255, 0.25));
 }
 
 .icon-box-blue .icon {
     color: var(--blue-500);
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
+    filter: drop-shadow(0 2px 4px rgba(100, 180, 255, 0.3));
 }
 
 .icon-box-emerald {
-    background: linear-gradient(to bottom right, rgba(150, 70%, 55%, 0.2), rgba(150, 70%, 55%, 0.1));
+    background: linear-gradient(135deg, rgba(150, 230, 200, 0.35), rgba(180, 240, 220, 0.25));
 }
 
 .icon-box-emerald .icon {
     color: var(--emerald-500);
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
+    filter: drop-shadow(0 2px 4px rgba(100, 200, 150, 0.3));
 }
 
 /* Card Title */
@@ -646,7 +653,7 @@ section {
 }
 
 .link-item {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     gap: 0.75rem;
     padding: 0.625rem 1rem;
@@ -654,17 +661,23 @@ section {
     transition: all 0.3s ease;
     font-weight: 500;
     font-size: 0.875rem;
+    width: fit-content;
+    font-style: italic;
 }
 
 .link-icon {
-    width: 1rem;
-    height: 1rem;
-    opacity: 0.7;
-    transition: opacity 0.3s ease;
+    width: 1.2rem;
+    height: 1.2rem;
+    opacity: 0.85;
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1));
 }
 
 .link-item:hover .link-icon {
     opacity: 1;
+    filter: drop-shadow(0 2px 8px rgba(255, 107, 157, 0.5)) drop-shadow(0 0 8px rgba(255, 107, 157, 0.4));
+    transform: scale(1.15);
+    text-shadow: 0 0 12px rgba(255, 107, 157, 0.6);
 }
 
 /* Pink Links */
@@ -986,7 +999,7 @@ section {
       rgba(255, 255, 255, 0.65),
       rgba(255, 255, 255, 0.35)
   );
-  border: 1px solid rgba(255, 255, 255, 0.45);
+  border: 1.2px solid rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
   border-radius: 22px;
@@ -1007,32 +1020,32 @@ section {
 .testimonial-card:nth-child(1) {
   background: linear-gradient(
       135deg,
-      rgba(255, 200, 220, 0.4),
-      rgba(230, 210, 250, 0.35)
+      rgba(255, 220, 235, 0.88),
+      rgba(245, 230, 255, 0.78)
   );
 }
 
 .testimonial-card:nth-child(2) {
   background: linear-gradient(
       135deg,
-      rgba(200, 220, 255, 0.4),
-      rgba(230, 210, 250, 0.35)
+      rgba(220, 240, 255, 0.88),
+      rgba(245, 230, 255, 0.78)
   );
 }
 
 .testimonial-card:nth-child(3) {
   background: linear-gradient(
       135deg,
-      rgba(255, 200, 220, 0.4),
-      rgba(230, 210, 250, 0.35)
+      rgba(255, 220, 235, 0.88),
+      rgba(245, 230, 255, 0.78)
   );
 }
 
 .testimonial-card:nth-child(4) {
   background: linear-gradient(
       135deg,
-      rgba(200, 220, 255, 0.4),
-      rgba(230, 210, 250, 0.35)
+      rgba(220, 240, 255, 0.88),
+      rgba(245, 230, 255, 0.78)
   );
 }
 
@@ -1050,6 +1063,7 @@ section {
   color: #2a2a2a;
   margin-bottom: 6px;
   font-weight: 600;
+  opacity: 0;
 }
 
 .testimonial-studio {
@@ -1057,6 +1071,7 @@ section {
   color: #d4a574;
   margin-bottom: 12px;
   font-weight: 500;
+  opacity: 0;
 }
 
 .testimonial-text {
@@ -1064,6 +1079,8 @@ section {
   color: #666;
   line-height: 1.6;
   font-style: italic;
+  opacity: 0;
+  min-height: 1.6rem;
 }
 
 /* RESPONSIVE */
@@ -1149,6 +1166,7 @@ section {
   border-radius: 28px;
   padding-bottom: 32px;
   margin-bottom: 60px;
+  border: 1.2px solid rgba(0, 0, 0, 0.15);
 }
 
 .founder-image {
@@ -1425,7 +1443,7 @@ section {
 .timeline-card {
     padding: 2rem;
     border-radius: 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1.2px solid rgba(0, 0, 0, 0.15);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
     backdrop-filter: blur(0.5rem);
@@ -1451,22 +1469,24 @@ section {
     backdrop-filter: blur(0.5rem);
 }
 
-.year-badge-pink { color: var(--primary-color); }
-.year-badge-purple { color: var(--purple-500); }
-.year-badge-blue { color: var(--blue-500); }
-.year-badge-mint { color: #FF0000; }
+.year-badge-pink { color: var(--primary-color); opacity: 0; }
+.year-badge-purple { color: var(--purple-500); opacity: 0; }
+.year-badge-blue { color: var(--blue-500); opacity: 0; }
+.year-badge-mint { color: #FF0000; opacity: 0; }
 
 .timeline-title {
     font-size: 1.5rem;
     color: #1F1F1F;
     margin-bottom: 0.75rem;
     font-weight: 700;
+    opacity: 0;
 }
 
 .timeline-description {
     color: var(--gray-600);
     font-size: 0.95rem;
     line-height: 1.6;
+    opacity: 0;
 }
 
 .accent-line {
@@ -1574,4 +1594,422 @@ section {
     .mission-statement { padding: 1.5rem; border-radius: 1.5rem; }
     .mission-quote { font-size: 1.1rem; }
     .mission-description { font-size: 0.85rem; }
+}
+
+/* ======================================================
+   BRAND STORY SECTION — WHERE IT ALL BEGAN (PREMIUM)
+====================================================== */
+
+#brand-story {
+  background: transparent;
+  padding: 100px 8%;
+  text-align: center;
+}
+
+.story-header-brand {
+  margin-bottom: 60px;
+}
+
+.story-header-brand h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+  color: #1F1F1F;
+  letter-spacing: -0.5px;
+}
+
+.story-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.story-card {
+  background: rgba(255, 255, 255, 0.65);
+  border-radius: 28px;
+  padding: 40px 32px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1.2px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.story-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+    ellipse at 100% 0%,
+    rgba(255, 182, 193, 0.15) 0%,
+    rgba(216, 191, 216, 0.1) 50%,
+    transparent 100%
+  );
+  pointer-events: none;
+}
+
+.story-card-content {
+  position: relative;
+  z-index: 2;
+}
+
+.story-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1F1F1F;
+  margin: 0 0 16px 0;
+  letter-spacing: -0.3px;
+}
+
+.story-card p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #555;
+  margin: 0;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+
+.story-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 
+    0 20px 40px rgba(255, 107, 157, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  border-color: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* ======================================================
+   WHY DOODLE CHARMS — PREMIUM UPGRADE
+====================================================== */
+
+.why {
+  background: transparent;
+  padding: 100px 8%;
+}
+
+.why h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 60px 0;
+  color: #1F1F1F;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.why-item {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.72), rgba(255, 248, 252, 0.65));
+  border-radius: 24px;
+  padding: 40px 32px;
+  text-align: center;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 
+    0 12px 32px rgba(0, 0, 0, 0.09),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7),
+    inset 0 0 20px rgba(255, 192, 203, 0.1);
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.why-item::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(255, 192, 203, 0.2) 0%, transparent 70%);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.why-item:hover::before {
+  opacity: 1;
+}
+
+.why-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px;
+  font-size: 32px;
+  box-shadow: 
+    0 16px 36px rgba(255, 176, 211, 0.4),
+    inset 0 1px 2px rgba(255, 255, 255, 0.5);
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+  opacity: 0;
+  border: 1.5px solid rgba(255, 255, 255, 0.6);
+  color: #FF6B9D;
+}
+
+.why-item:hover .why-icon {
+  transform: scale(1.15) rotate(5deg);
+  box-shadow: 
+    0 20px 48px rgba(255, 176, 211, 0.55),
+    inset 0 1px 2px rgba(255, 255, 255, 0.7);
+}
+
+.why-item h3 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #1F1F1F;
+  margin: 0 0 14px 0;
+  letter-spacing: -0.3px;
+  opacity: 0;
+}
+
+.why-item p {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 0;
+  line-height: 1.7;
+  font-weight: 500;
+  opacity: 0;
+  letter-spacing: 0.2px;
+}
+
+.why-item:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 
+    0 24px 48px rgba(255, 107, 157, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8),
+    inset 0 0 20px rgba(255, 192, 203, 0.15);
+  border-color: rgba(255, 192, 203, 0.8);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.85), rgba(255, 240, 248, 0.78));
+}
+
+/* ======================================================
+   GLOBAL HOVER GLOW EFFECT — ALL CARDS
+====================================================== */
+
+/* Stats Card Hover */
+.stat {
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.stat:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 
+    0 16px 40px rgba(255, 107, 157, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  border-color: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.65);
+}
+
+/* Collection Card Hover */
+.card {
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 
+    0 18px 50px rgba(255, 107, 157, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+/* Timeline Card Hover */
+.timeline-card {
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.timeline-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 
+    0 16px 45px rgba(255, 107, 157, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  border-color: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.7);
+}
+
+/* Testimonial Card Hover */
+.testimonial-card {
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 
+    0 18px 50px rgba(255, 107, 157, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+/* Founder Card Hover */
+.founder-card {
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.founder-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 
+    0 18px 50px rgba(255, 107, 157, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  border-color: rgba(255, 255, 255, 0.7);
+}
+   RESPONSIVE: BRAND STORY & WHY SECTIONS
+====================================================== */
+
+@media (max-width: 1024px) {
+  .story-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .story-card {
+    padding: 32px 24px;
+  }
+
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .why-item {
+    padding: 28px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  #brand-story {
+    padding: 80px 6%;
+  }
+
+  .story-header-brand h2 {
+    font-size: 2.2rem;
+  }
+
+  .story-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .story-card {
+    padding: 28px 20px;
+  }
+
+  .story-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .story-card p {
+    font-size: 0.95rem;
+  }
+
+  .why {
+    padding: 80px 6%;
+  }
+
+  .why h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .why-item {
+    padding: 24px 20px;
+  }
+
+  .why-icon {
+    width: 56px;
+    height: 56px;
+    font-size: 24px;
+  }
+
+  .why-item h3 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #brand-story {
+    padding: 60px 5%;
+  }
+
+  .story-header-brand h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  .story-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .story-card {
+    padding: 20px 16px;
+  }
+
+  .story-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+
+  .story-card p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .why {
+    padding: 60px 5%;
+  }
+
+  .why h2 {
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .why-item {
+    padding: 20px 16px;
+  }
+
+  .why-icon {
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .why-item h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+
+  .why-item p {
+    font-size: 0.9rem;
+  }
 }
